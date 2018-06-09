@@ -32,6 +32,17 @@ console.log("another test of the testing tests")
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
 
+var legalVote = 18
+var myAge = 31
+function canVote(age){
+  if (age >= legalVote){
+    return true
+  }else{
+    return false
+  }
+}
+var resultsCanVote = canVote(myAge)
+console.log("I am " + myAge+ " years old...can I vote? " + resultsCanVote)
 
 /*
  * #2
@@ -46,6 +57,18 @@ console.log("another test of the testing tests")
 */
 
 
+function login(password){
+  if(password === "test123"){
+    return "Login Success!"
+  }else{
+    return "Failed Login. Go Home."
+  }
+}
+
+var loginTry = "test123"
+var resultsLogin = login(loginTry)
+console.log("You entered: " + loginTry+ " ... " + resultsLogin)
+
 /*
  * #3
  * Function - isGreaterThan
@@ -59,6 +82,18 @@ console.log("another test of the testing tests")
  * Console.log your result.
 */
 
+function isGreaterThan(first, second){
+  if(first>second){
+    return true
+  }else{
+    return false
+  }
+}
+
+var num1 = 123
+var num2 = 32
+var resultsIsGreaterThan = isGreaterThan(num1,num2)
+console.log("Is " + num1+ " greater than " + num2+ " ? " + resultsIsGreaterThan)
 
 
 /*
@@ -73,6 +108,16 @@ console.log("another test of the testing tests")
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+  if(boo ===true){
+    return true
+  }else{
+    return false
+  }
+}
+var myBoo = true
+var resultsMustBeTrue = mustBeTrue(myBoo)
+console.log("Is it true? " + resultsMustBeTrue )
 
 
 /*
@@ -87,7 +132,16 @@ console.log("another test of the testing tests")
  * Console.log your result.
 */
 
-
+function bigBird(word){
+  if(word.length ===3){
+    return"Word to Big Bird"
+  }else{
+    return "No that isnt a 3 letter word."
+  }
+}
+var myWord = "cat"
+var resultsBigBird = bigBird(myWord)
+console.log("You word is " + myWord + "      " + resultsBigBird )
 
 /*
  * #6
