@@ -331,6 +331,18 @@ console.log(resultsGraduation)
  * Console.log your result.
 */ 
 
+function moneyTrain(speed){
+  if(speed<50){
+    return "you are riding on the Honolulu RAIL"
+  }else if(speed<100){
+    return "you probly on an AMTRAK"
+  }else{
+    return "you must be ballin out on a Shinkansen or a rocket ship"
+  }
+}
+var mySpeed = 123
+var resultsMoneyTrain = moneyTrain(mySpeed)
+console.log("Your are traveling at "+mySpeed+"mph. " + resultsMoneyTrain)
 
 /*
  * #14
@@ -345,6 +357,20 @@ console.log(resultsGraduation)
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+
+var budget = 23
+  var doughnutPrice = 5
+  var doughtnutBought=0
+
+function buyDoughtnut(){
+  budget = budget - doughnutPrice
+  doughtnutBought++
+}
+buyDoughtnut()
+console.log("your current budget is: " + budget+"   You have this many doughnuts: "+ doughtnutBought)
+
+buyDoughtnut()
+console.log("your current budget is: " + budget+"   You have this many doughnuts: "+ doughtnutBought)
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
