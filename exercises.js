@@ -374,7 +374,30 @@ console.log("your current budget is: " + budget+"   You have this many doughnuts
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
-Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
+Inside the function, create a switch statement that will check the daily specials 
+of your favorite restaurant (or make up your own daily specials for each day of the week.*/
+
+function dailySpecials(special){
+
+var store = null
+
+switch (special){
+  case 'poke':
+  store = 'Nicos fish market';
+  break;
+  case 'pizza':
+  store = 'bostons pizza';
+  break;
+  case 'burger':
+  store = 'Teddys Bigger Burgers';
+  break;
+  
+}
+return store
+}
+
+var myLunch = "pizza"
+console.log("To eat "+myLunch+" we need to go to " + dailySpecials(myLunch))
 
 
 
