@@ -156,6 +156,18 @@ console.log("You word is " + myWord + "      " + resultsBigBird )
  * Console.log your result.
 */
 
+function isEqual(first, second){
+  if(first === second){
+    return"you look maaaaaaaahvelous"
+  }else{
+    return "I dont even know u dude"
+  }
+}
+
+var entry1 = "thing"
+var entry2 = "thing2"
+var resultsIsEqual = isEqual(entry1, entry2)
+console.log(resultsIsEqual)
 
 /*
  * #7
@@ -169,7 +181,18 @@ console.log("You word is " + myWord + "      " + resultsBigBird )
  * If the strings are not equal, the function will return the message "Opposites do attract." Otherwise, return the message: "Cause it's like you're my mirror." 
  * Console.log your result.
 */
-
+ function notEqual(first, second){
+   if(first ===second){
+     return"cause its like youre my mirror"
+   }else{
+     return "Opposites attract"
+   }
+ }
+ 
+var entry3 = "thing"
+var entry4 = "thing2"
+var resultsNotEqual = notEqual(entry3, entry4)
+console.log(resultsNotEqual)
 
 /*
  * #8
