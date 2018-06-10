@@ -206,7 +206,16 @@ console.log(resultsNotEqual)
  * Console.log your result.
 */ 
 
-
+function spareChange(money) {
+  if(money>100){
+    return true
+  }else{
+    return false
+  }
+}
+var myMoney = 120
+var resultsSpareChange = spareChange(myMoney)
+console.log("Do you have more than 100 dollars in your pocket? " + resultsSpareChange)
 
 /*
  * #9
@@ -222,7 +231,18 @@ console.log(resultsNotEqual)
  * Console.log your result.
 */ 
 
-
+function dirty30(one, two, three){
+  if(one+two+three >30){
+    return true
+  }else{
+    return false
+  }
+}
+var myOne = 1
+var myTwo = 4
+var myThree = 23
+var resultsDirty30 = dirty30(myOne, myTwo, myThree)
+console.log("Is the sum of the three numbers more than 30? " + resultsDirty30)
 
 /*
  * #10
@@ -236,8 +256,17 @@ console.log(resultsNotEqual)
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+  if(num%2===0){
+    return true
+  }else{
+    return false
+  }
+}
 
-
+var myNum = 23
+var resultsEvenStevens = evenStevens(myNum)
+console.log("Is the number "+myNum+" an even number?" + resultsEvenStevens)
 
 /*
  * #11
@@ -251,7 +280,18 @@ console.log(resultsNotEqual)
  * If BOTH values are 21 or over, the function will return the message: "Welcome to the Legends Lounge." Otherwise, it will return the message: "Chuck E Cheese is across the street."
  * Console.log your result.
 */ 
+function daClub(cover, age){
+  if(cover>21 && age>>21){
+    return "welcome to the legends lounge"
+  }else{
+    return "go chuck E cheese brah"
+  }
+}
 
+var myCover = 23
+var myAge = 20
+var resultsDaClub = daClub(myCover, myAge)
+console.log(resultsDaClub)
 
 /*
  * #12
@@ -266,7 +306,18 @@ console.log(resultsNotEqual)
  * Console.log your result.
 */ 
 
+function graduation(credits, thesis){
+  if(credits>=120 || thesis ===true){
+    return "congrats on a great job"
+  }else{
+    return "you require summer schoolings"
+  }
+}
 
+var myCredits = 123
+var myThesis = false
+var resultsGraduation = graduation(myCredits, myThesis)
+console.log(resultsGraduation)
 
 /*
  * #13
