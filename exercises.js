@@ -459,6 +459,20 @@ for (var i=1; i<6; i++){
  * Console.log your result.
 */
 
+var numArray = [11,27,2001,1877667, 43]
+var total = 0
+function sumItUp(arr){
+
+for (var i=0; i<numArray.length; i++){
+  total =  total+ numArray[i]
+  console.log("Current value of total is : "+ total)
+}
+return total}
+
+sumItUp(numArray)
+
+console.log( "The total sum of all number in the array is "+ total)
+
 
 
 /*
