@@ -493,11 +493,11 @@ var east =["east"]
 var west = ["west"]
 
 function allStars(ballers){
-  for (var i=0; i<players.length; i++){
+  for (var i=0; i<ballers.length; i++){
     if(i%2===0){
-      east[i/2]=players[i]
+      east[i/2]=ballers[i]
     }else{
-      west[(i-1)/2] = players[i]
+      west[(i-1)/2] = ballers[i]
     }}
 }
 
@@ -520,6 +520,18 @@ console.log("the players in the west conf are "+ west)
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+  function subways(special){
+    for (var i=0; i<special.length; i++){
+      if(i%2===0){
+        
+      }else{
+        special[(i-1)/2] = "Classic Tuna"
+      }}
+  return special}
+
+  subways(subOftheDay)
+console.log("the subs are "+ subOftheDay)
+
 
 /*
 Final Boss
@@ -534,16 +546,77 @@ Final Boss
 */
 
 var phrase = "An apple a day keeps Alice feeling awesome!";
- 
-  
-  
+
+function removeLetter(str){
+  var theArray = str.split("")
+  console.log(theArray)
+  var theNewArray = ["mm"]
+  var count=0
+  for (var i=0; i<theArray.length; i++){
+    if(theArray[i]==="A"||"a"){
+      //count the a's
+      count++
+      console.log(count, theArray[i])
+    }else{
+      theNewArray[i-count] = theArray[i]
+      console.log(theNewArray)
+    }}
+return theNewArray
+  }
+
+console.log(removeLetter(phrase))
 
 
+//exercise 1:
+//Function repeatString(str, num) The function will take two parameters and repeat a given string (first argument) num times (second argument). Return an empty string if num is a negative number.
+
+function repeatString(str, num){
+  var newString = ""
+  if(num > 0){
+    for (var i=0; i<num; i++){
+    newString = newString + str
+  }}
+  return newString
+}
 
 
+var str11 = "money"
+var num1 = 4
+var newnewString = repeatString(str11, num1)
+
+console.log(newnewString)
 
 
+//exercise 2:
+//Function - timeConvert(num) The function will take the num parameter being passed in and return the number of hours and minutes. Separate the number of hours and minutes with a colon.
+function timeConvert(num){
+  var hours = 0
+  var min = 0
+
+  hours = (num-(num%60))/60
+  min = num%60
+
+  return "The time is "+hours+":"+min
+}
+console.log(timeConvert(68))
 
 
+//exercise 3:
+//Function - FirstFactorial(num) The function will take the num parameter being passed and return the factorial of it (ie. if num =3, return(3 * 2 * 1)). For test cases, the range will be between 1 and 18.
+
+function FirstFactorial(num){
+var factorial=1
+  for(var i=0; i<num; i++){
+    factorial=factorial*(i+1)
+    console.log(i,factorial)
+  }
+  return factorial
+}
+
+var number=10
+
+console.log("The first factorial for "+ number+" is equal to "+ FirstFactorial(number))
+
+//comment
 
 
