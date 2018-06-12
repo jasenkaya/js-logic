@@ -488,6 +488,24 @@ console.log( "The total sum of all number in the array is "+ total)
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+
+var east =["east"]
+var west = ["west"]
+
+function allStars(ballers){
+  for (var i=0; i<players.length; i++){
+    if(i%2===0){
+      east[i/2]=players[i]
+    }else{
+      west[(i-1)/2] = players[i]
+    }}
+}
+
+allStars(players)
+console.log("the players in the east conf are "+ east)
+console.log("the players in the west conf are "+ west)
+
+
 /*
  * #19
  * Function - subways
